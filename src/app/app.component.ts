@@ -27,7 +27,7 @@ export class AppComponent implements OnInit{
         responseType: 'text'
     }
 
-    return this.http.post<any>('http://localhost:3000/lance', lance, options);
+    return this.http.post<any>('http://localhost:3000/lance', lance);
   }
 
   buscarLances(): Observable<any> {
